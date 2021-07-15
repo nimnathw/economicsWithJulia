@@ -1,11 +1,16 @@
-println("Hi")
+#Hello world example
+println("Hello world")
+
+#Basic implemntation of a function
 function f(x)
     cos(x)
 end
-g(x) = x >= 0 ? x : -x
-println(g(-2))
-println(f(0.5))
 
+# single expressions
+g(x) = x >= 0 ? x : -x
+j(x) = f(x - pi)
+
+#multiline format 
 function h(x)
     if x > 0
         1
@@ -13,7 +18,9 @@ function h(x)
          -1
     end
 end
-println(-1)
 
-j(x) = f(x - pi)
+
+#calling functions
+println(g(-2))
+println(f(0.5))
 println(j(pi))
